@@ -7,7 +7,7 @@ public class CourseService
     private SqlConnection GetConnection()
         {
 
-            string connectionString = "Server=tcp:appserver400050.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False;User ID=sqladmin;Password=Microsoft@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string connectionString = "Server=tcp:<database-server-name>.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False;User ID=<SQL USER NAME>;Password=<SQL PASSWORD>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             return new SqlConnection(connectionString);
         }
         
@@ -57,3 +57,4 @@ public class CourseService
 
 
 }
+
